@@ -1,0 +1,76 @@
+<doctype! html>
+<html>
+	<head>
+		<link rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<script type=text/javascript src="../static/ppc.js"> </script>	
+		<style>
+			#row1{
+                background-color:Gainsboro;
+                padding:80px;
+                padding-left:20px;
+                font-size:40px;
+			margin-bottom:40px;
+			}			
+			.list_label{
+                padding:10px;
+                background-color:LightBlue;
+                font-weight:bold;
+                font-size:20px;
+                margin-bottom:20px;
+			}
+			.col{
+    			margin-right:20px;
+			}
+			.entry{
+                padding:2px;
+                height:30px;
+                border: 1px solid black;
+                white-space:nowrap;
+			}
+			.non_ppc_entry{
+                padding:2px;
+                height:30px;
+                border: 1px solid black;
+                white-space:nowrap;
+			}
+			.ppc_entry{
+                padding:2px;
+                height:30px;
+                border: 1px solid black;
+                white-space:nowrap;
+			}			
+            .droppable{
+                background: yellow;
+            }
+            .highlightDRAGGING.highlightHOVER{
+                background-color: darkblue;
+            }
+            .highlightDRAGGING{
+                background-color: blue;
+            }
+		</style>	
+	</head>
+	<body>
+	    <div class="container">
+	        <div class="jumbotron">
+	            <h1>Party Planning Committee</h1>
+	        </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <div id="non_ppc_label" class="list_label ui-widget-header">Non-PPC</div>
+                    <div id="non_ppc_list">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div id="ppc_label" class="list_label ui-widget-header">PPC</div>
+                    <div id="ppc_list">
+                    </div>
+                </div>	                    
+            </div>
+	    </div>
+	</body>
+</html>

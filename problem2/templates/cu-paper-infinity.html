@@ -1,0 +1,60 @@
+<doctype! html>
+<html>
+	<head>
+		<link rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<script type=text/javascript src="../static/cu-paper-infinity.js"> </script>	
+		<style>
+			.row1{
+			background-color:Gainsboro;
+			padding:80px;
+			padding-left:20px;
+			font-size:40px;
+			margin-bottom:40px;
+			}
+			.row2{margin-bottom:30px;}
+			.other_row{margin-bottom:5px;}
+			.col1{
+			padding:5px;
+			font-size:19px;
+			}
+			.col2{
+			margin-right:30px;
+			padding:3px;
+			}
+			.col3{
+			margin-right:1px;
+			padding:3px;
+			}		
+			.col4{
+			}
+			.X{margin-left:20px;
+			background-color:Orange;
+			color:Black;
+			}
+		</style>
+	</head>
+    <body>
+        <div class="container">
+            <div class="jumbotron row1">
+                <h1>Columbia Paper Infinity</h1>
+            </div>
+            <div id="logsales">
+                <div class="row row2">
+                    <div class="col-md-3 col1">
+                        Log your paper sales:
+                    </div>
+                    <input class="col-md-5 col2" type="text" id="enter_client" placeholder="Client">     
+                    <input class="col-md-2 col3" type="text" id="enter_reams" placeholder="# Reams">
+                    <botton class="btn btn-primary" id="submit_sale">Submit</botton>
+                </div>
+                <br>
+                <div id="sales">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
